@@ -22,3 +22,15 @@ docker run --name mycontainer -p 8080:8080 myimage
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
 ```
+
+### Training a new model
+The notebooks for training is available here: 
+https://github.com/vwoloszyn/email_generator/blob/main/train/train.ipynb
+
+## Generating Email
+Go to http://0.0.0.0:8080/docs, fill up the parameters and click "execute"
+![Alt text](images/image1.png "Title")
+
+## Replaying Email
+Go to http://0.0.0.0:8080/docs, fill up the parameters and click "execute"
+![Alt text](images/image2.png "Title")
