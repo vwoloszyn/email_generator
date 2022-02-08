@@ -14,11 +14,13 @@ model = AutoModelForCausalLM.from_pretrained(
 
 
 class AIResponse(BaseModel):
+    """A container for generated text"""
     generated_text: str
     text_length: int
 
 
 class Return(BaseModel):
+    """A response model"""
     status: str
     ai_results: List[AIResponse]
 
